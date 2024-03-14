@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas</title>
+</head>
+<body>
+    <h1>1- Observe o trecho de código abaixo: <br></h1>
+
+       <p> <code><pre>
+            int INDICE = 13, SOMA = 0, K = 0;
+        
+            enquanto K &lt; INDICE faça 
+            
+            {
+            
+            K = K + 1;
+            
+            SOMA = SOMA + K;
+            
+            } 
+            
+            imprimir(SOMA);
+            
+            
+            
+            Ao final do processamento, qual será o valor da variável SOMA?
+        </code></pre></p>
+        <h2> Resposta</h2>
+        <p>
+<pre>
+    91
+</pre>
+        </p> <br>
+    <h1>
+        2- Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.
+
+
+
+IMPORTANTE:
+
+Esse número pode ser informado através de qualquer entrada de sua preferência ou pode ser previamente definido no código;
+    </h1>
+    <br>
+    <h2>Resposta</h2>
+
+    <pre><p><code>
+        numero = int(input("Digite um número: "))
+
+a, b = 0, 1
+
+while b &lt; numero:
+    a, b = b, a + b
+
+if b == numero:
+    print(f"O número {numero} pertence à sequência de Fibonacci.")
+else:
+    print(f"O número {numero} não pertence à sequência de Fibonacci.")
+
+
+    </p></pre></code>
+
+    <h1><pre>
+        3- Descubra a lógica e complete o próximo elemento:
+
+
+
+a- 1, 3, 5, 7, ___
+
+b- 2, 4, 8, 16, 32, 64, ____
+
+c- 0, 1, 4, 9, 16, 25, 36, ____
+
+d- 4, 16, 36, 64, ____
+
+e- 1, 1, 2, 3, 5, 8, ____
+
+f- 2,10, 12, 16, 17, 18, 19, ____
+</pre></h1>
+<h2>Resposta</h2>
+
+<p><pre>
+    a- A lógica aqui parece ser adicionar 2 ao número anterior. Então o próximo número seria 7 + 2 = 9.
+
+Resposta: 1, 3, 5, 7, 9
+
+b- Aqui parece que cada número é multiplicado por 2. Portanto, o próximo número seria 64 * 2 = 128.
+
+Resposta: 2, 4, 8, 16, 32, 64, 128
+
+c- Esta sequência parece ser os quadrados dos números naturais começando do 0. Então o próximo número seria 7^2 = 49.
+
+Resposta: 0, 1, 4, 9, 16, 25, 36, 49
+
+d- Parece que essa sequência consiste em quadrados de números pares. Então o próximo número seria 8^2 = 64.
+
+Resposta: 4, 16, 36, 64, 100
+
+e- Esta soma o numero anterior com o seu sucessor.
+Resposta: 1, 1, 2, 3, 5, 8, 13
+
+f- A lógica parece ser aumentar os números em uma quantidade crescente. Então o próximo número seria 19 + 1 = 20.
+
+Resposta: 2, 10, 12, 16, 17, 18, 19, 20
+
+</pre></p>
+<h1><pre>
+    Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em uma sala diferente. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+
+Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual interruptor controla cada lâmpada?
+
+</pre></h1>
+
+<h2>Resposta</h2>
+<pre><p>
+    utilizaria o algoritmo de busca binária, onde iria reduzindo o problema pela metade, até chegar na resposta, com a busca binária eu só precisaria ir duas vezes as salas
+
+</p></pre>
+
+<h1><pre>
+  5-  Escreva um programa que inverta os caracteres de um string.
+
+
+IMPORTANTE:
+
+a- Essa string pode ser informada através de qualquer entrada de sua preferência ou pode ser previamente definida no código;
+
+b- Evite usar funções prontas, como, por exemplo, reverse;
+
+</pre></h1>
+
+<h2>resposta</h2>
+<p><pre><code>
+    
+        def inverte_string(string):
+        string_invertida = ""
+        for i in range(len(string) - 1, -1, -1):
+            string_invertida += string[i]
+        return string_invertida
+    
+    string_original = "Hello, World!"
+    string_invertida = inverte_string(string_original)
+    print("String original:", string_original)
+    print("String invertida:", string_invertida)
+    
+    porém em html existe uma tag que faz isso automaticamente &lt;bdo dir=rtl &gt; &lt;/bdo&gt;
+</code>
+
+
+
+</pre></p>
+
+
+</body>
+</html>
